@@ -1,4 +1,4 @@
-# crypto-image
+# Visualizing Cryptography Through Images
 This code is highly modular allowing the user to play with the current settings or make their own algorithm.
 
 ## Description
