@@ -55,15 +55,16 @@ for x in range(width):
 		# Permutate
 		newColour = [lastColour[2], lastColour[0], lastColour[1], 255]
 
-
-		# Encrypt pixel
+		# Encrypt each RGB value for one pixel
 		for i in range(3):
 			# Reset keyCount if out of bounds
 			if keyCount == len(key): keyCount = 0
 
 			newColour[i] = (key[keyCount] + newColour[i]) % 128
 			keyCount = keyCount+1
+
 		###################################################################
+		# Change pixel to new encrypted pixel
 		px[x,y] = tuple(newColour)
 
 image.save('encrypted.png')
