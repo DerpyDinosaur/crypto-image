@@ -1,3 +1,5 @@
+# Code by Adam Brickhill
+
 # Imports
 from PIL import Image
 import hashlib
